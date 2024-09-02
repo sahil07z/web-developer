@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+      body {
+        background-image: url(background\ sign.jpg);
+        font-family: Arial, sans-serif;
+        /* background-color: #f0f2f5; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .signup-container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+      }
+
+      .signup-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .signup-header h2 {
+        font-weight: bold;
+        margin-top: 0;
+      }
+
+      .signup-header p {
+        color: #ffffff;
+        font-size: 14px;
+      }
+
+      .signup-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-group label {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      .input-group input {
+        padding: 10px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        background: transparent;
+      }
+
+      .input-group input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+      }
+
+      button{
+        padding: 8px 40px;
+        border-radius: 8px;
+        border: 1px solid white;
+        transition: 0.2s ease-in-out;
+        font-weight: bold;
+        background: transparent;
+        color: rgb(255, 255, 255);
+      }
+      button:hover{
+        background-color: rgba(237, 83, 40, 0.959);
+        color: rgb(0, 0, 0);
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.753);
+      }
+
+      .error-message {
+        color: #red;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .signup-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .signup-btn:hover {
+        background-color: #0056b3;
+      }
+
+      .already-have-account {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .already-have-account a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .already-have-account a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup-header">
+        <h2>Sign Up</h2>
+        <p>Create an account to get started</p>
+      </div>
+      <form class="signup-form">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="enter you name"
+            required
+          />
+          <span class="error-message" id="name-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="enter you email"
+            required
+          />
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="enter you password"
+            required
+          />
+          <span class="error-message" id="password-error"></span>
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="enter you conform password"
+            required
+          />
+          <span class="error-message" id="confirm-password-error"></span>
+        </div>
+        <button type="submit" id="signup-btn">Sign Up</button>
+        <p class="already-have-account">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </form>
+    </div>
+
+    <script>const signupForm = document.querySelector('.signup-form');
+      const nameInput = document.querySelector('#name');
+      const emailInput = document.querySelector('#email');
+      const passwordInput = document.querySelector('#password');
+      const confirmPasswordInput = document.querySelector('#confirm-password');
+      const signupBtn = document.querySelector('#signup-btn');
+      const nameError = document.querySelector('#name-error');
+      const emailError = document.querySelector('#email-error');
+      const passwordError = document.querySelector('#password-error');
+      const confirmPasswordError =</script>
+  </body>
+</html>
